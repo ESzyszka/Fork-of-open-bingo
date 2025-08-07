@@ -1,0 +1,26 @@
+{
+  "name": "youtube-buzzword-bingo",
+  "version": "1.0.0",
+  "description": "A web application that tracks buzzwords in AI model launch videos and live streams",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "deploy": "vercel"
+  },
+  "keywords": [
+    "youtube",
+    "ai",
+    "buzzwords",
+    "bingo",
+    "transcription",
+    "speech-recognition"
+  ],
+  "author": "Kilo Code",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/youtube-buzzword-bingo.git"
+  },
+  "homepage": "https://your-username.github.io/youtube-buzzword-bingo"
+}

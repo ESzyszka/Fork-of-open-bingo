@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube AI Buzzword Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 YouTube AI Buzzword Bingo</h1>
+            <p>Track buzzwords in AI model launch videos and live streams</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="url-input-container">
+                    <input 
+                        type="url" 
+                        id="youtube-url" 
+                        placeholder="Enter YouTube URL (e.g., https://www.youtube.com/watch?v=...)"
+                        class="url-input"
+                    >
+                    <button id="start-btn" class="start-button">Start Tracking</button>
+                </div>
+                <div class="status" id="status">Ready to track buzzwords</div>
+            </section>
+
+            <section class="video-section" id="video-section" style="display: none;">
+                <div class="video-container">
+                    <div id="youtube-player"></div>
+                </div>
+                <div class="controls">
+                    <button id="toggle-transcription" class="control-btn">Toggle Transcription</button>
+                    <button id="reset-counters" class="control-btn">Reset Counters</button>
+                    <button id="export-results" class="control-btn">Export Results</button>
+                </div>
+            </section>
+
+            <section class="bingo-section">
+                <div class="section-header">
+                    <h2>🎯 AI Buzzword Bingo</h2>
+                    <div class="bingo-status">
+                        <div class="marked-count">Marked: <span id="marked-count">0</span>/25</div>
+                        <button id="new-card" class="control-btn">New Card</button>
+                    </div>
+                </div>
+                
+                <div class="bingo-card" id="bingo-card">
+                    <!-- 5x5 Bingo grid will be populated by JavaScript -->
+                </div>
+
+                <div class="bingo-info">
+                    <p>Click squares when you hear these buzzwords! Get 5 in a row to win!</p>
+                </div>
+
+                <div class="custom-buzzwords">
+                    <h3>Add Custom Buzzwords</h3>
+                    <div class="custom-input-container">
+                        <input
+                            type="text"
+                            id="custom-buzzword"
+                            placeholder="Enter custom buzzword"
+                            class="custom-input"
+                        >
+                        <button id="add-buzzword" class="add-btn">Add</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="transcription-section" id="transcription-section" style="display: none;">
+                <h3>Live Transcription</h3>
+                <div class="transcription-display" id="transcription-display">
+                    Transcription will appear here...
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built for tracking AI launch event buzzwords • <a href="https://github.com" target="_blank">View Source</a></p>
+        </footer>
+    </div>
+
+    <!-- Load YouTube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="buzzwords.js"></script>
+    <script src="transcription.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
