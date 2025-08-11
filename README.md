@@ -1,4 +1,4 @@
-# YouTube AI Buzzword Bingo 🎯
+# YouTube AI Buzzword Bingo
 
 A web application that tracks buzzwords in AI model launch videos and live streams, creating a real-time scorecard for common AI/ML terminology and marketing speak.
 
